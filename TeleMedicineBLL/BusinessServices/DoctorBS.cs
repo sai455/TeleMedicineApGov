@@ -10,6 +10,7 @@ namespace TeleMedicineBLL.BusinessServices
 		private readonly IDoctorRepository _doctorRepository;
 		public DoctorBS(IDoctorRepository doctorRepository)
 		{
+			//
 			_doctorRepository = doctorRepository;
 		}
 		public IList<PatientDetails> GetPatientsDetails()
