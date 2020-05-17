@@ -1,0 +1,712 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    @*<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">*@
+    <title>TeleMedicine</title>
+
+    <link href="~/Content/Custom/css/style.css" rel="stylesheet" />
+    <link href="~/Content/Custom/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Custom/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="landing-page">
+        <div class="top-bar">
+            <div class="container d-block">
+                <div class="row">
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                    <div class="col-xs-4 col-sm-4 col-md-5 col-lg-4 ">
+                        <div class="info-text">
+                            <span class="email-info ">info@Telemedicine.com</span>
+                            <span class="seperator">|</span>
+                            <span class="tel">+0034895 -6555 - 42</span>
+                        </div>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+                    <div class="col-xs-5 col-sm-3 col-md-5 col-lg-5 ">
+                        <div class="right info-text">
+                            <span class="clock">
+                                <img src="~/Content/Custom/images/time.png" />
+                            </span>
+                            <span class="clock pr-2" id="clock"></span>
+                            <span class="calendar"><img src="~/Content/Custom/images/date.png"></span>
+                            <span class="date pr-2" id="date"></span>
+                            <span class="signup ">
+                                SIGNUP
+                                <i class="fas fa-caret-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-header pt-2">
+            <div class="container mobile-hide">
+                <div class="row">
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 pt-4 pb-3">
+                        <img src="~/Content/Custom/images/logo.jpg" class="telemedicineLogo" alt="Logo">
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
+                        <div class="img-center-container">
+                            <img class="img-fluid apLogo " src="~/Content/Custom/images/ap_logo.png" alt="ApLogo">
+                        </div>
+                        <h2 class="header-text  pt-1">THE DEPARTMENT OF HEALTH, MEDICAL AND FAMILY WELFARE,</h2>
+                        <h2 class="header-text header-mobile-hide">GOVERNMENT OF ANDHRA PRADESH</h2>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                        <img src="~/Content/Custom/images/CM.png" class="cmLogo " alt="CmLogo">
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="mobile-topnav">
+                    <div class="row">
+                        <div class="xs-4 sm-4">
+                            <img src="~/Content/Custom/images/logo.jpg" class=" " style="width:30%;    margin-left: 5%;" alt="Logo">
+                            <img class="  " src="~/Content/Custom/images/ap_logo.png" style="width:15%; margin-right: 5%;
+            margin-left: 5%;" alt="ApLogo">
+                            <img src="~/Content/Custom/images/CM.png" class="" style="width:20%;margin-right: 10%;margin-left: 5%;" alt="CmLogo">
+                        </div>
+                    </div>
+                    <div class="xs-4 sm-4">
+
+                        <div class="xs-4 sm-4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mobile-header">
+                <div class="">
+                    <p class="header-text ">THE DEPARTMENT OF HEALTH, MEDICAL AND FAMILY WELFARE,</p>
+                    <p class="header-text "> GOVERNMENT OF ANDHRA PRADESH</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="topnav">
+            <div class="mobile-container">
+
+                <!-- Top Navigation Menu -->
+                <div class="topnav">
+                    <a href="#home" class="active"></a>
+                    <div id="myLinks">
+
+                        <a href="#">Home</a>
+                        <a href="#Facilities">Facilities</a>
+                        <a href="#Agencies">Agencies</a>
+                        <a href="#Test-Takers">Test Takers</a>
+                        <a href="#Our-Assessments">Our Assessments</a>
+                        <a href="#News-Events">News & Events</a>
+
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="container-fluid landing-header">
+                <div style="margin-right:0px" class="row mobile-hide">
+                    <div class="col-xs-0 col-sm-0 col-md-0 col-lg-1  green ">
+
+                    </div>
+
+                    <div class="col-xs-7 col-sm-7 col-md-8 col-lg-8 menu-container green mobile-hide">
+                        <ul class="menu-list pl-5">
+
+                            <li class="home-menu-link"><a href="#">Home</a></li>
+                            <li class="menu-items"><a href="#Facilities">Facilities</a></li>
+                            <li class="menu-items"><a href="#Agencies">Agencies</a></li>
+                            <li class="menu-items"><a href="#Test-Takers">Test Takers</a></li>
+                            <li class="menu-items padding-left-10"><a href="#Our-Assessments">Our Assessments</a></li>
+                            <li class="menu-items"><a href="#News-Events">News & Events</a></li>
+                        </ul>
+                    </div>
+                    <div class=" contact-cont col-xs-3 col-sm-3 col-md-4 col-lg-3 pt-2 padding-left-6 mobile-hide">
+                        <h5 class="cmName">Sri Y S Jagan Mohan Reddy</h5>
+                        <p class="cm">Hon'able Chief Minister of Andhrapradesh</p>
+                    </div>
+                </div>
+                <div class="container banner pb-4">
+                    <div class="row">
+                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                        <div class="col-xs-7 col-sm-7 col-md-6 col-lg-5 pt-4">
+                            <div class="left-banner-content">
+                                <h2 class="banner-heading">Welcome to</h2><br />
+                                <h2 class="banner-heading">AP Telemedicine</h2><br />
+                                <p class="banner-text pt-3">
+                                    medscore is the national leader in holistic nursing and allied
+                                    health assessments. We are unique in offering clinical,situational
+                                    and behavioral assessments tailored to virtually all healthcare
+                                    specialities.
+                                </p>
+                                <h3 class="misd-cal ">GIVE MISSED CALL</h3>
+                                <h1 class="num ">1800 103 4466</h1>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-4 col-md-5 col-lg-6  ">
+                            <img src="~/Content/Custom/images/workflow.png" class="img-fluid work-flow-img">
+                        </div>
+                        <!-- <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="cases">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-4 pt-3">
+                        <div>
+                            <ul class="received">
+                                <li><img src="~/Content/Custom/images/call_icon.png" class="img-fluid"> </li>
+                                <li class="cal-num pl-3">250</li>
+                                <li class="cal-text pl-2"> Number of Emergency Calls Received </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 pt-3">
+                        <div>
+                            <ul class="solved">
+                                <li><img src="~/Content/Custom/images/patients_icon.png" class="img-fluid"> </li>
+                                <li class="cal-num pl-3">220</li>
+                                <li class="cal-text pl-2"> Number of Cases Solved </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-4 pt-3">
+                        <div>
+                            <ul class="saved">
+                                <li><img src="~/Content/Custom/images/lives_icon.png" class="img-fluid"> </li>
+                                <li class="cal-num pl-3">250</li>
+                                <li class="cal-text pl-2"> Number of Lives Saved </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="instructions">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
+                        <div>
+                            <h2 class="instructions-heading pb-2">Instructions to Citizen Patient</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <div class="instructions-padding">
+                                    <div class="separator">
+                                        <div class="instructions-sub-heading">
+                                            <h4 class="sub pl-3">Sample Text</h4>
+                                            <p class="instructions-content pl-3 pt-2">
+                                                Join other leading healthcare organizations who have used medscoreto
+                                                build better teams , and reduce turnover.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <div class="instructions-padding">
+                                    <div class="separator">
+                                        <div class="instructions-sub-heading">
+                                            <h4 class="sub pl-3">Sample Text</h4>
+                                            <p class="instructions-content pl-3 pt-2">
+                                                Join other leading healthcare organizations who have used medscoreto
+                                                build better teams , and reduce turnover.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="row sample-row">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <div class="instructions-padding">
+                                    <div class="separator">
+                                        <div class="instructions-sub-heading">
+                                            <h4 class="sub pl-3">Sample Text</h4>
+                                            <p class="instructions-content pl-3 pt-2">
+                                                Join other leading healthcare organizations who have used medscoreto
+                                                build better teams , and reduce turnover.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <div class="instructions-padding">
+                                    <div class="separator">
+                                        <div class="instructions-sub-heading">
+                                            <h4 class="sub pl-3">Sample Text</h4>
+                                            <p class="instructions-content pl-3 pt-2">
+                                                Join other leading healthcare organizations who have used medscoreto
+                                                build better teams , and reduce turnover.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-5 col-lg-4 pl-3 login-padding">
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <button type="button" class="btn btn-primary  login-button">Login</button>
+                            <button type="button" class="btn btn-primary register-button">Register</button>
+                        </div>
+                        <div class="container login-container p-10">
+                            <div class="pt-5 login-heading">
+                                Login
+                            </div>
+
+                            <div class="form">
+                                <input class="form-control input-login mt-4" id="username" type="text" placeholder="Username" required>
+                                <input class="form-control input-login mt-2" id="password" type="password" placeholder="Password" required>
+                                <button id="loginSubmit" class="btn btn-primary  login-button mt-3 ">Login</button>
+                                <p class="forgot-text mt-4">Forgot your password ? Rest Here</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="success-stories">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <div class="">
+                            <h2 class="stories-heading pt-4">TeleMedicine Success Stories</h2>
+                        </div>
+                        <div class="row pt-4">
+                            <img src="~/Content/Custom/images/Telemedicine-Success-Stories_img.png" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div class="pl-2">
+                            <h3 class="stories-subheading">Sample Text</h3>
+                        </div>
+                        <div class="pt-3 pl-2">
+                            <p class="stories-content">
+                                As the national leader, our scale provides us unparalleled
+                                insight into clinical performance. With over 5 million assessments
+                                completed. Prophecy has helped hundreds of hospital
+                                systems and staffing agencies nationwide select and retain the best
+                                health professionals.
+
+                            </p>
+                        </div>
+                        <div class="pt-1 ml-2">
+                            <button type="submit" class="btn btn-primary  more-stories ">More</button>
+                        </div>
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="latest-updates">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div class="updates-heading">
+                            <span class="latest">LATEST</span>
+                            <span class="updates">UPDATES</span>
+                        </div>
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+                    </div>
+
+                    <div class="container pt-5 pl-3">
+                        <div class="row">
+                            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                    <div class="row">
+                                                        <div class="col-xs-5 col-sm-4 col-md-4 col-lg-5 pt-2">
+                                                            <img src="~/Content/Custom/images/latest_updates_img.jpg" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-xs-7 col-sm-8 col-md-8 col-lg-7">
+                                                            <div class="updates-subheading">
+                                                                Next stop - San Francisco for the ANIA Conference
+                                                            </div>
+                                                            <div class="updates-content">
+                                                                Will your team be attending the
+                                                                American Nursing Informatics Association (ANIA)
+                                                                Annual Conference in San Francisco this week? If so,
+                                                            </div>
+                                                            <div class="pt-2">
+                                                                <button type="submit" class="btn btn-disabled  more-updates "> Read more</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                    <div class="row">
+                                                        <div class="col-xs-5 col-sm-4 col-md-4 col-lg-5 pt-2">
+                                                            <img src="~/Content/Custom/images/latest_updates_img.jpg" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-xs-7 col-sm-8 col-md-8 col-lg-7">
+                                                            <div class="updates-subheading">
+                                                                Next stop - San Francisco for the ANIA Conference
+                                                            </div>
+                                                            <div class="updates-content">
+                                                                Will your team be attending the
+                                                                American Nursing Informatics Association (ANIA)
+                                                                Annual Conference in San Francisco this week? If so,
+                                                            </div>
+                                                            <div class="pt-2">
+                                                                <button type="submit" class="btn btn-disabled  more-updates "> Read more</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item ">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                    <div class="row">
+                                                        <div class="col-xs-5 col-sm-5 col-md-4 col-lg-5 pt-2">
+                                                            <img src="~/Content/Custom/images/latest_updates_img.jpg" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-xs-7 col-sm-7 col-md-8 col-lg-7">
+                                                            <div class="updates-subheading">
+                                                                Next stop - San Francisco for the ANIA Conference
+                                                            </div>
+                                                            <div class="updates-content">
+                                                                Will your team be attending the
+                                                                American Nursing Informatics Association (ANIA)
+                                                                Annual Conference in San Francisco this week? If so,
+                                                            </div>
+                                                            <div class="pt-2">
+                                                                <button type="submit" class="btn btn-disabled  more-updates "> Read more</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                    <div class="row">
+                                                        <div class="col-xs-5 col-sm-5 col-md-4 col-lg-5 pt-2">
+                                                            <img src="~/Content/Custom/images/latest_updates_img.jpg" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-xs-7 col-sm-7 col-md-8 col-lg-7">
+                                                            <div class="updates-subheading">
+                                                                Next stop - San Francisco for the ANIA Conference
+                                                            </div>
+                                                            <div class="updates-content">
+                                                                Will your team be attending the
+                                                                American Nursing Informatics Association (ANIA)
+                                                                Annual Conference in San Francisco this week? If so,
+                                                            </div>
+                                                            <div class="pt-2">
+                                                                <button type="submit" class="btn btn-disabled  more-updates "> Read more</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item ">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                    <div class="row">
+                                                        <div class="col-xs-5 col-sm-5 col-md-4 col-lg-5 pt-2">
+                                                            <img src="~/Content/Custom/images/latest_updates_img.jpg" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-xs-7 col-sm-7 col-md-8 col-lg-7">
+                                                            <div class="updates-subheading">
+                                                                Next stop - San Francisco for the ANIA Conference
+                                                            </div>
+                                                            <div class="updates-content">
+                                                                Will your team be attending the
+                                                                American Nursing Informatics Association (ANIA)
+                                                                Annual Conference in San Francisco this week? If so,
+                                                            </div>
+                                                            <div class="pt-2">
+                                                                <button type="submit" class="btn btn-disabled  more-updates "> Read more</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                    <div class="row">
+                                                        <div class="col-xs-5 col-sm-5 col-md-4 col-lg-5 pt-2">
+                                                            <img src="~/Content/Custom/images/latest_updates_img.jpg" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-xs-7 col-sm-7 col-md-8 col-lg-7">
+                                                            <div class="updates-subheading">
+                                                                Next stop - San Francisco for the ANIA Conference
+                                                            </div>
+                                                            <div class="updates-content">
+                                                                Will your team be attending the
+                                                                American Nursing Informatics Association (ANIA)
+                                                                Annual Conference in San Francisco this week? If so,
+                                                            </div>
+                                                            <div class="pt-2">
+                                                                <button type="submit" class="btn btn-disabled  more-updates "> Read more</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+                                <div class="row pl-5 pt-3 carousel-icons">
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                        <span class="" aria-hidden="true">
+                                            <img src="~/Content/Custom/images/arrow_L.jpg" class="img-fluid">
+
+                                        </span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                        <span class="" aria-hidden="true">
+                                            <img src="~/Content/Custom/images/arrow_R.jpg" class="img-fluid">
+                                        </span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+            </div>
+        </div>
+        <div class=" social-media">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div class="socialmedia-heading">
+                            <span class="latest">Social</span>
+                            <span class="updates">Media</span>
+                        </div>
+
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col-xs-2 col-sm-2 col-md-1 col-lg-2"></div>
+                    <div class="col-xs-8 col-sm-8 col-md-10 col-lg-8">
+                        <div class="row pb-2">
+                            <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                                <div class="facebook-container">
+                                    <span style="">
+                                        <iframe allow="encrypted-media" allowfullscreen="true" allowtransparency="true"
+                                                class="" frameborder="0" height="auto" name="fb62dc622cbafc" scrolling="no"
+                                                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fapssdcskilldevelopment%2F&amp;tabs=timeline&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=true&amp;show_facepile=true&amp;appId=594476357607992"
+                                                style="border: none; visibility: visible; width:350px; height: 350px;"
+                                                title="fb:page Facebook Social Plugin" width="100%"></iframe>
+                                    </span>
+                                    <!--  <iframe src="https://www.facebook.com/TeleMedicineInc"></iframe> -->
+                                </div>
+                                <div class="facebook-link pt-3">
+                                    <button type="button" class="btn btn-primary facebook-button"
+                                            onclick="window.location.href = 'https://www.facebook.com/TeleMedicineInc';">
+                                        Facebook
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-2"></div>
+                            <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                                <div class="twitter-container">
+                                    <span style="">
+                                        <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true"
+                                                allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered"
+                                                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fapssdcskilldevelopment%2F&amp;tabs=timeline&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=true&amp;show_facepile=true&amp;appId=594476357607992"
+                                                style="position: static; visibility: visible; width:350px; height: 350px;"
+                                                data-widget-id="profile:AP_Skill" title="Twitter Timeline"></iframe>
+                                </div>
+                                <div class="twitter-link pt-3">
+                                    <button type="button" class="btn btn-primary twitter-button"
+                                            onclick="window.location.href = 'https://twitter.com/APHealthScience';">
+                                        Twitter
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-1 col-lg-2"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-1 col-sm-1 col-md-0 col-lg-1"></div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div class="footer-col-1">
+                            <p class="footer-col-1-content">
+                                Dummy text is text that is used in the publishing industry
+                                or by web designers to occupy the space which will later be
+                                filled with 'real' content. This is required when, for example, the final text is not yet available.
+                            </p>
+                            <button type="submit" class="btn btn-primary  more-footer-content mt-2">MORE</button>
+                            <div class="socia-media-icons pt-4">
+                                <span><img src="~/Content/Custom/images/fb_icon.png" class="img-fluid"></span>
+                                <span><img src="~/Content/Custom/images/google_plus_icon.png" class="img-fluid"></span>
+                                <span><img src="~/Content/Custom/images/twitter_icon.png" class="img-fluid"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                        <div class="footer-col-2">
+                            <ul class="">
+                                <li>Home</li>
+                                <li>Facilities</li>
+                                <li>Agencies</li>
+                                <li>Test Takers</li>
+                                <li>Our Assessments</li>
+                                <li>News & Events</li>
+                                <li>Client Admin Login</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                        <div class="footer-col-3">
+                            <ul class="">
+                                <li>Test Taker Login</li>
+                                <li>Contact Support</li>
+                                <li>Assessment Library</li>
+                                <li>Robust Reporting</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <div class="footer-col-4">
+                            <ul class="">
+                                <li>2960 Lake Osborne Dr # 108</li>
+                                <li>Lake worth, Florida(FL), 33461</li>
+                                <li>(561)588-6132</li>
+                                <li><b>Email:</b> info@Telemedicine.com</li>
+                                <li><b>Website:</b> www.Telemedicine.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-1 col-sm-1 col-md-0 col-lg-1"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="copy-rights">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-xs-1 col-sm-0 col-md-0 col-lg-1"></div>
+                    <div class="col-xs-4 col-sm-5 col-md-5 col-lg-4">
+                        <span class="copyright-text">
+                            Copyright@2020 TeleMedicine. All rights reserved.
+                        </span>
+                    </div>
+                    <div class="col-xs-4 col-sm-2 col-md-2 col-lg-3">
+
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3">
+                        <span class="policy-text">
+                            Privacy and policy | Terms & Conditions
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Content/Custom/scripts/bootstrap.min.js"></script>
+    <script src="~/Content/Custom/scripts/script.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("#loginSubmit").on('click', function () {
+                var userName = $("#username").val().trim(); var password = $("#password").val().trim();
+                if (userName.length == 0) {
+                    alert("Please enter username");
+                    return false;
+                }
+                if (password.length == 0) {
+                    alert("Please enter password");
+                    return false;
+                }
+
+                var loginResponse = {
+                    "userName": userName, "password": password
+                }
+                GetUserLogin(loginResponse);
+            });
+        });
+        function GetUserLogin(loginResponse) {
+            $.ajax({
+                type: "GET",
+                async: false,
+                contentType: "application/json; charset=utf-8",
+                url: "Authentication/GetUserByCredientials",
+                data: loginResponse,
+                dataType: "json",
+                //cache: false,
+                success: function (response) {
+                   
+                    window.localStorage.setItem('LoginUser', response.UserName);
+                   
+                    if (response.RoleName == "RECEPTION") {
+                        var redirectUrl = '@Url.Action("Index", "Reception")';
+                        $(location).attr('href', redirectUrl)
+                       
+                        return false;
+                    }
+                    if (response.RoleName == "DOCTOR") {
+                        var redirectUrl = '@Url.Action("Index", "Doctor")';
+                        $(location).attr('href', redirectUrl)
+                    }
+                    return false;
+                },
+                error: function (result) {
+                    alert("Error");
+                    console.log(result);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

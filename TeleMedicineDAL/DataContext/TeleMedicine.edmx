@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="TeleMedicineModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <Function Name="GEMASTER_INVESTIGATION_CATEGORYS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GETCALLERDETAILS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GETDIAGNOSISS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GETDISTRICTS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GETMASTER_DRUG_DOSAGES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GETMASTER_DRUG_FORMS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GETMASTER_DRUG_INSTRUCTIONS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GETMASTER_INVESTIGATION_GROUPS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GETMASTER_INVESTIGATIONS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GETMASTER_MEDICINE_DRUG_CLASS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GETMASTER_MENUS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GETMASTER_PRODUCTS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GETMASTER_SPECIALITYS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GETMASTER_STATES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GETMASTER_SYMPTOMS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GETMASTER_USERS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GETMENU_USER_PERMISSIONS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GETPATIENT_BASIC_DETAILS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GETPATIENT_CALLER_HISTORYS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GETPATIENT_DIAGNOSIS_DETAILS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GETPATIENT_DOCTOR_NOTES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GETPATIENT_INSTRUCTION_DETAILS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GETPATIENT_INVESTIGATION_DETAILS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GETPATIENT_SYMPTOMS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GETUSER_LOG" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GETUSERDESIGATIONDATABYUSERID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="GETVILLAGES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="VALIDATEUSER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserName" Type="varchar" Mode="In" />
+          <Parameter Name="Password" Type="varchar" Mode="In" />
+        </Function>
+        <EntityContainer Name="TeleMedicineModelStoreContainer" />
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="TeleMedicineModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="TeleMedicineEntities" annotation:LazyLoadingEnabled="true" >
+          <FunctionImport Name="GEMASTER_INVESTIGATION_CATEGORYS" />
+          <FunctionImport Name="GETCALLERDETAILS" ReturnType="Collection(TeleMedicineModel.GETCALLERDETAILS_Result)" />
+          <FunctionImport Name="GETDIAGNOSISS" />
+          <FunctionImport Name="GETDISTRICTS" ReturnType="Collection(TeleMedicineModel.GETDISTRICTS_Result)" />
+          <FunctionImport Name="GETMASTER_DRUG_DOSAGES" />
+          <FunctionImport Name="GETMASTER_DRUG_FORMS" />
+          <FunctionImport Name="GETMASTER_DRUG_INSTRUCTIONS" />
+          <FunctionImport Name="GETMASTER_INVESTIGATION_GROUPS" ReturnType="Collection(TeleMedicineModel.GETMASTER_INVESTIGATION_GROUPS_Result)" />
+          <FunctionImport Name="GETMASTER_INVESTIGATIONS" />
+          <FunctionImport Name="GETMASTER_MEDICINE_DRUG_CLASS" ReturnType="Collection(TeleMedicineModel.GETMASTER_MEDICINE_DRUG_CLASS_Result)" />
+          <FunctionImport Name="GETMASTER_MENUS" ReturnType="Collection(TeleMedicineModel.GETMASTER_MENUS_Result)" />
+          <FunctionImport Name="GETMASTER_PRODUCTS" ReturnType="Collection(TeleMedicineModel.GETMASTER_PRODUCTS_Result)" />
+          <FunctionImport Name="GETMASTER_SPECIALITYS" ReturnType="Collection(TeleMedicineModel.GETMASTER_SPECIALITYS_Result)" />
+          <FunctionImport Name="GETMASTER_STATES" />
+          <FunctionImport Name="GETMASTER_SYMPTOMS" ReturnType="Collection(TeleMedicineModel.GETMASTER_SYMPTOMS_Result)" />
+          <FunctionImport Name="GETMASTER_USERS" ReturnType="Collection(TeleMedicineModel.GETMASTER_USERS_Result)" />
+          <FunctionImport Name="GETMENU_USER_PERMISSIONS" ReturnType="Collection(TeleMedicineModel.GETMENU_USER_PERMISSIONS_Result)" />
+          <FunctionImport Name="GETPATIENT_BASIC_DETAILS" ReturnType="Collection(TeleMedicineModel.GETPATIENT_BASIC_DETAILS_Result)" />
+          <FunctionImport Name="GETPATIENT_CALLER_HISTORYS" ReturnType="Collection(TeleMedicineModel.GETPATIENT_CALLER_HISTORYS_Result)" />
+          <FunctionImport Name="GETPATIENT_DIAGNOSIS_DETAILS" ReturnType="Collection(TeleMedicineModel.GETPATIENT_DIAGNOSIS_DETAILS_Result)" />
+          <FunctionImport Name="GETPATIENT_DOCTOR_NOTES" ReturnType="Collection(TeleMedicineModel.GETPATIENT_DOCTOR_NOTES_Result)" />
+          <FunctionImport Name="GETPATIENT_INSTRUCTION_DETAILS" ReturnType="Collection(TeleMedicineModel.GETPATIENT_INSTRUCTION_DETAILS_Result)" />
+          <FunctionImport Name="GETPATIENT_INVESTIGATION_DETAILS" ReturnType="Collection(TeleMedicineModel.GETPATIENT_INVESTIGATION_DETAILS_Result)" />
+          <FunctionImport Name="GETPATIENT_SYMPTOMS" ReturnType="Collection(TeleMedicineModel.GETPATIENT_SYMPTOMS_Result)" />
+          <FunctionImport Name="GETUSER_LOG" ReturnType="Collection(TeleMedicineModel.GETUSER_LOG_Result)" />
+          <FunctionImport Name="GETUSERDESIGATIONDATABYUSERID" ReturnType="Collection(TeleMedicineModel.GETUSERDESIGATIONDATABYUSERID_Result)">
+          <Parameter Name="UserID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="GETVILLAGES" ReturnType="Collection(TeleMedicineModel.GETVILLAGES_Result)" />
+          <FunctionImport Name="VALIDATEUSER" ReturnType="Collection(TeleMedicineModel.VALIDATEUSER_Result)">
+            <Parameter Name="UserName" Mode="In" Type="String" />
+            <Parameter Name="Password" Mode="In" Type="String" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="GETCALLERDETAILS_Result">
+          <Property Type="String" Name="CallerTyoe" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="callername" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="contactnumber" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="pastcallrecord" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="patientdoctorhistory" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="calltime" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Action" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="GETDISTRICTS_Result">
+          <Property Type="Int32" Name="DISTRICT_ID" Nullable="true" />
+          <Property Type="String" Name="DISTRICT_NAME" Nullable="true" MaxLength="30" />
+        </ComplexType>
+        <ComplexType Name="GETMASTER_INVESTIGATION_GROUPS_Result">
+          <Property Type="Int32" Name="INV_GROUP_ID" Nullable="true" />
+          <Property Type="String" Name="INV_GROUP_NAME" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="GETMASTER_MEDICINE_DRUG_CLASS_Result">
+          <Property Type="Int32" Name="DRUG_CLASS_ID" Nullable="true" />
+          <Property Type="String" Name="DURG_CLASS_NAME" Nullable="true" MaxLength="100" />
+        </ComplexType>
+        <ComplexType Name="GETMASTER_MENUS_Result">
+          <Property Type="Int32" Name="MENU_ID" Nullable="true" />
+          <Property Type="String" Name="MENU_NAME" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="MENU_URL" Nullable="true" MaxLength="150" />
+        </ComplexType>
+        <ComplexType Name="GETMASTER_PRODUCTS_Result">
+          <Property Type="Int32" Name="PRODUCT_ID" Nullable="true" />
+          <Property Type="String" Name="PRODUCT_NAME" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="PRODUCT_CODE" Nullable="true" />
+          <Property Type="Int32" Name="DRUG_FORM_ID" Nullable="true" />
+          <Property Type="Int32" Name="DRUG_CLASS_ID" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="GETMASTER_SPECIALITYS_Result">
+          <Property Type="Int32" Name="SPECIALITY_ID" Nullable="true" />
+          <Property Type="String" Name="SPECIALITY_NAME" Nullable="true" MaxLength="100" />
+        </ComplexType>
+        <ComplexType Name="GETMASTER_SYMPTOMS_Result">
+          <Property Type="Int32" Name="SYMPTOM_ID" Nullable="true" />
+          <Property Type="String" Name="SYMPTOM_NAME" Nullable="true" MaxLength="30" />
+        </ComplexType>
+        <ComplexType Name="GETMASTER_USERS_Result">
+          <Property Type="Int32" Name="USER_ID" Nullable="false" />
+          <Property Type="String" Name="USER_NAME" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="GETMENU_USER_PERMISSIONS_Result">
+          <Property Type="Int32" Name="USER_PER_ID" Nullable="true" />
+          <Property Type="Int32" Name="MENU_ID" Nullable="true" />
+          <Property Type="Int32" Name="DESIGNATION_ID" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="GETPATIENT_BASIC_DETAILS_Result">
+          <Property Type="Int32" Name="REGISTRATION_ID" Nullable="true" />
+          <Property Type="Int32" Name="SECRETARIAT_ID" Nullable="true" />
+          <Property Type="String" Name="NAME" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="GETPATIENT_CALLER_HISTORYS_Result">
+          <Property Type="Int32" Name="REGISTRATION_ID" Nullable="true" />
+          <Property Type="Int32" Name="CALLER_ID" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="GETPATIENT_DIAGNOSIS_DETAILS_Result">
+          <Property Type="Int32" Name="REGISTRATION_ID" Nullable="true" />
+          <Property Type="Int32" Name="DIAGNOSIS_ID" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="GETPATIENT_DOCTOR_NOTES_Result">
+          <Property Type="Int32" Name="REGISTRATION_ID" Nullable="true" />
+          <Property Type="String" Name="DOCOTR_NOTES" Nullable="true" MaxLength="100" />
+          <Property Type="Int32" Name="USER_ID" Nullable="true" />
+          <Property Type="String" Name="REMARKS" Nullable="true" MaxLength="200" />
+        </ComplexType>
+        <ComplexType Name="GETPATIENT_INSTRUCTION_DETAILS_Result">
+          <Property Type="Int32" Name="REGISTRATION_ID" Nullable="true" />
+          <Property Type="Int32" Name="DRUG_INSTRUCT_ID" Nullable="true" />
+          <Property Type="Int32" Name="USER_ID" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="GETPATIENT_INVESTIGATION_DETAILS_Result">
+          <Property Type="Int32" Name="REGISTRATION_ID" Nullable="true" />
+          <Property Type="Int32" Name="INV_ID" Nullable="true" />
+          <Property Type="Int32" Name="USER_ID" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="GETPATIENT_SYMPTOMS_Result">
+          <Property Type="Int32" Name="REGISTRATION_ID" Nullable="true" />
+          <Property Type="Int32" Name="SYMPTOM_ID" Nullable="true" />
+          <Property Type="Int32" Name="NO_OF_DAYS_SPECIFIER" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="GETUSER_LOG_Result">
+          <Property Type="Int32" Name="USER_ID" Nullable="true" />
+          <Property Type="String" Name="IPADDRESS" Nullable="true" MaxLength="150" />
+          <Property Type="DateTime" Name="LOGIN_DATE" Nullable="true" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="GETUSERDESIGATIONDATABYUSERID_Result">
+          <Property Type="Int32" Name="USER_ID" Nullable="false" />
+          <Property Type="String" Name="USER_NAME" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="DESIGNATION_ID" Nullable="true" />
+          <Property Type="String" Name="DESIGNATION_NAME" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="GETVILLAGES_Result">
+          <Property Type="Int32" Name="VILLAGE_ID" Nullable="true" />
+          <Property Type="String" Name="VILLAGE_NAME" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="VALIDATEUSER_Result">
+          <Property Type="Int32" Name="USER_ID" Nullable="false" />
+          <Property Type="String" Name="USER_NAME" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="DESIGNATION_ID" Nullable="true" />
+          <Property Type="String" Name="DESIGNATION_NAME" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="CONTACT_NUMBER" Nullable="true" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="TeleMedicineModelStoreContainer" CdmEntityContainer="TeleMedicineEntities" >
+          <FunctionImportMapping FunctionImportName="GEMASTER_INVESTIGATION_CATEGORYS" FunctionName="TeleMedicineModel.Store.GEMASTER_INVESTIGATION_CATEGORYS" />
+          <FunctionImportMapping FunctionImportName="GETCALLERDETAILS" FunctionName="TeleMedicineModel.Store.GETCALLERDETAILS">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TeleMedicineModel.GETCALLERDETAILS_Result">
+                <ScalarProperty Name="CallerTyoe" ColumnName="CallerTyoe" />
+                <ScalarProperty Name="callername" ColumnName="callername" />
+                <ScalarProperty Name="contactnumber" ColumnName="contactnumber" />
+                <ScalarProperty Name="pastcallrecord" ColumnName="pastcallrecord" />
+                <ScalarProperty Name="patientdoctorhistory" ColumnName="patientdoctorhistory" />
+                <ScalarProperty Name="calltime" ColumnName="calltime" />
+                <ScalarProperty Name="Action" ColumnName="Action" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GETDIAGNOSISS" FunctionName="TeleMedicineModel.Store.GETDIAGNOSISS" />
+          <FunctionImportMapping FunctionImportName="GETDISTRICTS" FunctionName="TeleMedicineModel.Store.GETDISTRICTS">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TeleMedicineModel.GETDISTRICTS_Result">
+                <ScalarProperty Name="DISTRICT_ID" ColumnName="DISTRICT_ID" />
+                <ScalarProperty Name="DISTRICT_NAME" ColumnName="DISTRICT_NAME" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GETMASTER_DRUG_DOSAGES" FunctionName="TeleMedicineModel.Store.GETMASTER_DRUG_DOSAGES" />
+          <FunctionImportMapping FunctionImportName="GETMASTER_DRUG_FORMS" FunctionName="TeleMedicineModel.Store.GETMASTER_DRUG_FORMS" />
+          <FunctionImportMapping FunctionImportName="GETMASTER_DRUG_INSTRUCTIONS" FunctionName="TeleMedicineModel.Store.GETMASTER_DRUG_INSTRUCTIONS" />
+          <FunctionImportMapping FunctionImportName="GETMASTER_INVESTIGATION_GROUPS" FunctionName="TeleMedicineModel.Store.GETMASTER_INVESTIGATION_GROUPS">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TeleMedicineModel.GETMASTER_INVESTIGATION_GROUPS_Result">
+                <ScalarProperty Name="INV_GROUP_ID" ColumnName="INV_GROUP_ID" />
+                <ScalarProperty Name="INV_GROUP_NAME" ColumnName="INV_GROUP_NAME" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GETMASTER_INVESTIGATIONS" FunctionName="TeleMedicineModel.Store.GETMASTER_INVESTIGATIONS" />
+          <FunctionImportMapping FunctionImportName="GETMASTER_MEDICINE_DRUG_CLASS" FunctionName="TeleMedicineModel.Store.GETMASTER_MEDICINE_DRUG_CLASS">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TeleMedicineModel.GETMASTER_MEDICINE_DRUG_CLASS_Result">
+                <ScalarProperty Name="DRUG_CLASS_ID" ColumnName="DRUG_CLASS_ID" />
+                <ScalarProperty Name="DURG_CLASS_NAME" ColumnName="DURG_CLASS_NAME" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GETMASTER_MENUS" FunctionName="TeleMedicineModel.Store.GETMASTER_MENUS">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TeleMedicineModel.GETMASTER_MENUS_Result">
+                <ScalarProperty Name="MENU_ID" ColumnName="MENU_ID" />
+                <ScalarProperty Name="MENU_NAME" ColumnName="MENU_NAME" />
+                <ScalarProperty Name="MENU_URL" ColumnName="MENU_URL" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GETMASTER_PRODUCTS" FunctionName="TeleMedicineModel.Store.GETMASTER_PRODUCTS">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TeleMedicineModel.GETMASTER_PRODUCTS_Result">
+                <ScalarProperty Name="PRODUCT_ID" ColumnName="PRODUCT_ID" />
+                <ScalarProperty Name="PRODUCT_NAME" ColumnName="PRODUCT_NAME" />
+                <ScalarProperty Name="PRODUCT_CODE" ColumnName="PRODUCT_CODE" />
+                <ScalarProperty Name="DRUG_FORM_ID" ColumnName="DRUG_FORM_ID" />
+                <ScalarProperty Name="DRUG_CLASS_ID" ColumnName="DRUG_CLASS_ID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GETMASTER_SPECIALITYS" FunctionName="TeleMedicineModel.Store.GETMASTER_SPECIALITYS">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TeleMedicineModel.GETMASTER_SPECIALITYS_Result">
+                <ScalarProperty Name="SPECIALITY_ID" ColumnName="SPECIALITY_ID" />
+                <ScalarProperty Name="SPECIALITY_NAME" ColumnName="SPECIALITY_NAME" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GETMASTER_STATES" FunctionName="TeleMedicineModel.Store.GETMASTER_STATES" />
+          <FunctionImportMapping FunctionImportName="GETMASTER_SYMPTOMS" FunctionName="TeleMedicineModel.Store.GETMASTER_SYMPTOMS">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TeleMedicineModel.GETMASTER_SYMPTOMS_Result">
+                <ScalarProperty Name="SYMPTOM_ID" ColumnName="SYMPTOM_ID" />
+                <ScalarProperty Name="SYMPTOM_NAME" ColumnName="SYMPTOM_NAME" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GETMASTER_USERS" FunctionName="TeleMedicineModel.Store.GETMASTER_USERS">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TeleMedicineModel.GETMASTER_USERS_Result">
+                <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+                <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GETMENU_USER_PERMISSIONS" FunctionName="TeleMedicineModel.Store.GETMENU_USER_PERMISSIONS">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TeleMedicineModel.GETMENU_USER_PERMISSIONS_Result">
+                <ScalarProperty Name="USER_PER_ID" ColumnName="USER_PER_ID" />
+                <ScalarProperty Name="MENU_ID" ColumnName="MENU_ID" />
+                <ScalarProperty Name="DESIGNATION_ID" ColumnName="DESIGNATION_ID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GETPATIENT_BASIC_DETAILS" FunctionName="TeleMedicineModel.Store.GETPATIENT_BASIC_DETAILS">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TeleMedicineModel.GETPATIENT_BASIC_DETAILS_Result">
+                <ScalarProperty Name="REGISTRATION_ID" ColumnName="REGISTRATION_ID" />
+                <ScalarProperty Name="SECRETARIAT_ID" ColumnName="SECRETARIAT_ID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GETPATIENT_CALLER_HISTORYS" FunctionName="TeleMedicineModel.Store.GETPATIENT_CALLER_HISTORYS">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TeleMedicineModel.GETPATIENT_CALLER_HISTORYS_Result">
+                <ScalarProperty Name="REGISTRATION_ID" ColumnName="REGISTRATION_ID" />
+                <ScalarProperty Name="CALLER_ID" ColumnName="CALLER_ID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GETPATIENT_DIAGNOSIS_DETAILS" FunctionName="TeleMedicineModel.Store.GETPATIENT_DIAGNOSIS_DETAILS">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TeleMedicineModel.GETPATIENT_DIAGNOSIS_DETAILS_Result">
+                <ScalarProperty Name="REGISTRATION_ID" ColumnName="REGISTRATION_ID" />
+                <ScalarProperty Name="DIAGNOSIS_ID" ColumnName="DIAGNOSIS_ID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GETPATIENT_DOCTOR_NOTES" FunctionName="TeleMedicineModel.Store.GETPATIENT_DOCTOR_NOTES">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TeleMedicineModel.GETPATIENT_DOCTOR_NOTES_Result">
+                <ScalarProperty Name="REGISTRATION_ID" ColumnName="REGISTRATION_ID" />
+                <ScalarProperty Name="DOCOTR_NOTES" ColumnName="DOCOTR_NOTES" />
+                <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+                <ScalarProperty Name="REMARKS" ColumnName="REMARKS" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GETPATIENT_INSTRUCTION_DETAILS" FunctionName="TeleMedicineModel.Store.GETPATIENT_INSTRUCTION_DETAILS">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TeleMedicineModel.GETPATIENT_INSTRUCTION_DETAILS_Result">
+                <ScalarProperty Name="REGISTRATION_ID" ColumnName="REGISTRATION_ID" />
+                <ScalarProperty Name="DRUG_INSTRUCT_ID" ColumnName="DRUG_INSTRUCT_ID" />
+                <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GETPATIENT_INVESTIGATION_DETAILS" FunctionName="TeleMedicineModel.Store.GETPATIENT_INVESTIGATION_DETAILS">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TeleMedicineModel.GETPATIENT_INVESTIGATION_DETAILS_Result">
+                <ScalarProperty Name="REGISTRATION_ID" ColumnName="REGISTRATION_ID" />
+                <ScalarProperty Name="INV_ID" ColumnName="INV_ID" />
+                <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GETPATIENT_SYMPTOMS" FunctionName="TeleMedicineModel.Store.GETPATIENT_SYMPTOMS">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TeleMedicineModel.GETPATIENT_SYMPTOMS_Result">
+                <ScalarProperty Name="REGISTRATION_ID" ColumnName="REGISTRATION_ID" />
+                <ScalarProperty Name="SYMPTOM_ID" ColumnName="SYMPTOM_ID" />
+                <ScalarProperty Name="NO_OF_DAYS_SPECIFIER" ColumnName="NO_OF_DAYS_SPECIFIER" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GETUSER_LOG" FunctionName="TeleMedicineModel.Store.GETUSER_LOG">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TeleMedicineModel.GETUSER_LOG_Result">
+                <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+                <ScalarProperty Name="IPADDRESS" ColumnName="IPADDRESS" />
+                <ScalarProperty Name="LOGIN_DATE" ColumnName="LOGIN_DATE" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GETUSERDESIGATIONDATABYUSERID" FunctionName="TeleMedicineModel.Store.GETUSERDESIGATIONDATABYUSERID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TeleMedicineModel.GETUSERDESIGATIONDATABYUSERID_Result">
+                <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+                <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+                <ScalarProperty Name="DESIGNATION_ID" ColumnName="DESIGNATION_ID" />
+                <ScalarProperty Name="DESIGNATION_NAME" ColumnName="DESIGNATION_NAME" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GETVILLAGES" FunctionName="TeleMedicineModel.Store.GETVILLAGES">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TeleMedicineModel.GETVILLAGES_Result">
+                <ScalarProperty Name="VILLAGE_ID" ColumnName="VILLAGE_ID" />
+                <ScalarProperty Name="VILLAGE_NAME" ColumnName="VILLAGE_NAME" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="VALIDATEUSER" FunctionName="TeleMedicineModel.Store.VALIDATEUSER">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="TeleMedicineModel.VALIDATEUSER_Result">
+                <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+                <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+                <ScalarProperty Name="DESIGNATION_ID" ColumnName="DESIGNATION_ID" />
+                <ScalarProperty Name="DESIGNATION_NAME" ColumnName="DESIGNATION_NAME" />
+                <ScalarProperty Name="CONTACT_NUMBER" ColumnName="CONTACT_NUMBER" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

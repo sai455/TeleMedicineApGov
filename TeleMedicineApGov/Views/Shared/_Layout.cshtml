@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeleMedicine</title>
+    @*@Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")*@
+    <link href="~/Content/Custom/css/style.css" rel="stylesheet" />
+    <link href="~/Content/Custom/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Custom/css/all.min.css" rel="stylesheet" />
+    @RenderSection("style", required: false)
+</head>
+<body>
+
+    <div class="reception-page ">
+        <div class="top-bar">
+            <div class="container-fluid d-block">
+                <div class="row">
+
+                    <div class="col-xs-4 col-sm-4 col-md-5 col-lg-4 ">
+                        <div class="info-text">
+                            <span class="email-info ">info@Telemedicine.com</span>
+                            <span class="seperator">|</span>
+                            <span class="tel">+0034895 -6555 - 42</span>
+                        </div>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-4"></div>
+                    <div class="col-xs-5 col-sm-3 col-md-5 col-lg-4 ">
+                        <div class="right info-text">
+                            <span class="clock">
+
+                                <img src="~/Content/Custom/images/time.png" />
+
+                            </span>
+                            <span class="clock pr-2" id="clock"></span>
+                            <span class="calendar"><img src="~/Content/Custom/images/date.png"></span>
+                            <span class="date pr-2" id="date"></span>
+                            <!-- <span class="signup ">SIGNUP
+                          <i class="fas fa-caret-down"></i>
+                        </span> -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="reception-heading">
+            <div class="container-fluid d-block ">
+                <div class="row">
+                    <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4 ">
+                        <h3 class="reception-subheading" id="h3Heading"></h3>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-4"></div>
+                    <div class="col-xs-2 col-sm-2 col-md-6 col-lg-4">
+                        <div class="row">
+                            <div class="col-xs-5 col-sm-5 col-md-6 col-lg-7">
+                                <div class="search-bar">
+                                    <img src="~/Content/Custom/images/search_icon.png" class="search-img">
+                                    <input class="form-control search-input" type="text" placeholder="Search...">
+                                </div>
+                            </div>
+                            <div class="col-xs-2 col-sm-2 col-md-3 col-lg-1 user-padding">
+                                <div class="user-info">
+                                    <p class="user-name" id="loginUserName"></p>
+                                </div>
+                            </div>
+                            <div class="col-xs-2 col-sm-2 col-md-3 col-lg-2">
+                                <div class="user-img">
+                                    <img src="~/Content/Custom/images/Profile_img.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @RenderSection("Content", required: false)
+
+
+
+    </div>
+    
+
+    @*@Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")*@
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Content/Custom/scripts/bootstrap.min.js"></script>
+    <script src="~/Content/Custom/scripts/script.js"></script>
+    <script src="~/Content/Custom/scripts/js.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
